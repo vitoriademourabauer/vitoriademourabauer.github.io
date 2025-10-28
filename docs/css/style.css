@@ -141,7 +141,7 @@ body {
 }
 
 .servico-box h3 {
-    size: 2rem;
+    font-size: 1.8rem;
     color: whitesmoke;
     margin-bottom: 15px;
 }
