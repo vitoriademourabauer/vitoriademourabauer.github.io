@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Vitória de Moura Bauer - Desenvolvedora Java e Análise de Sistemas.">
+  
+  <title>Portfólio - Vitória de Moura Bauer</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styleTheme.css">
+  
+  
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+
+<body>
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow nav-custom">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                Meu <span class="text-highlight">Portfólio</span>
+            </a>
+
+            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bx bx-menu fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#softskills" class="nav-link">Softskills</a></li>
+                    <li class="nav-item"><a href="#hardskills" class="nav-link">Hardskills</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+                    
+                    <!-- Botão de Tema -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button id="themeToggle" class="btn-theme" type="button" title="Alterar tema">
+                            <i class="bx bx-sun theme-icon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="home container min-vh-100 d-flex align-items-center" id="home">
+        <!-- flex-column-reverse: Imagem em cima no celular. flex-lg-row: Imagem na direita no PC -->
+        <div class="row w-100 flex-column-reverse flex-lg-row align-items-center g-5 py-5">
+            
+            <!-- Texto -->
+            <div class="col-12 col-lg-7 text-center text-lg-start">
+                <div class="home-content">
+                    <h1>Vitória de Moura Bauer</h1>
+                    <h3>Eu sou uma <span class="multiple-text"></span></h3>
+                    <p>
+                        Sou uma exploradora de códigos que une lógica e visual. Como uma caçadora de 'porquês', investigo a fundo a lógica 
+                        profunda que sustenta o sistema, desde a estruturação do banco de dados e a robustez do Back-end Java até a experiência 
+                        no Front-end. Mais do que programar, gosto de estruturar ideias: meu objetivo é é dominar o ciclo completo do desenvolvimento
+                        para criar sistemas como soluções reais que não apenas funcionem, mas que façam a diferença na vida das pessoas.
+                    </p>
+
+                    <div class="social-media justify-content-center justify-content-lg-start">
+                        <a href="https://github.com/vitoriademourabauer" target="_blank"><i class="bx bxl-github"></i></a>
+                        <a href="https://www.linkedin.com/in/vitoriademourabauer/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+                    </div>
+
+                    <a href="https://vitoriademourabauer.github.io/docs/Resume.pdf" target="_blank" class="btn-custom">Abrir CV</a>
+                </div>
+            </div>
+
+            <!-- Imagem -->
+            <div class="col-12 col-lg-5 text-center">
+                <div class="home-img d-flex justify-content-center">
+                    <img src="https://vitoriademourabauer.github.io/img/Profile_Photo.jpg" alt="Foto de Vitória de Moura Bauer" class="img-fluid p-2">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOFTSKILLS -->
+    <section class="skills" id="softskills">
+        <div class="container">
+            <h2 class="heading">Softskills</h2>
+            
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skill-card h-100 w-100">
+                        <i class="bx bx-group"></i>
+                        <h3>Trabalho em equipe</h3>
+                        <p>Colaboração, comunicação e cooperação para atingir objetivos comuns de forma eficiente.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skill-card h-100 w-100">
+                        <i class="bx bx-message-dots"></i>
+                        <h3>Comunicação</h3>
+                        <p>Clareza e objetividade ao expressar ideias, facilitando o trabalho em grupo.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skill-card h-100 w-100">
+                        <i class="bx bx-task"></i>
+                        <h3>Organização</h3>
+                        <p>Planejamento e administração eficiente de tarefas e recursos para garantir produtividade e clareza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HARDSKILLS -->
+    <section class="skills" id="hardskills">
+        <div class="container">
+            <h2 class="heading">Hardskills</h2>
+            
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skill-card h-100 w-100">
+                        <i class="bx bxs-data"></i>
+                        <h3>Banco de Dados & Modelagem</h3>
+                        <p>Modelar, criar, gerenciar e consultar bancos de dados relacionais utilizando SQL.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skill-card h-100 w-100">
+                        <i class="bx bx-brain"></i>
+                        <h3>Análise de Sistemas</h3>
+                        <p>Compreender, modelar e estruturar sistemas de software para atender às necessidades do usuário.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <div class="skill-card h-100 w-100">
+                        <i class="bx bxl-java"></i>
+                        <h3>Desenvolvimento em Java</h3>
+                        <p>Criação de aplicações web back-end utilizando Javalin, arquitetura MVC e integração com banco de dados via JDBC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="py-3" id="contact">
+        <div class="container">
+            <div class="text-center mb-3">
+                <h2 class="text-light text-uppercase text-highlight">Contato</h2>
+                <p class="text-light text-secondary">Entre em contato comigo através das redes abaixo.</p>
+            </div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
+                <div class="contact-item text-center">
+                    <i class="bx bx-envelope fs-2 text-white"></i>
+                    <p class="mt-2 mb-0">
+                        <a href="mailto:vitoriademourabauer@gmail.com" class="text-light text-decoration-none hover-highlight">E-mail</a>
+                    </p>
+                </div>
+                <div class="contact-item text-center">
+                    <i class="bx bxl-whatsapp fs-2 text-white"></i>
+                    <p class="mt-2 mb-0">
+                        <a href="https://wa.me/5551989413402" target="_blank" class="text-light text-decoration-none hover-highlight">WhatsApp</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4 bg-transparent">
+        <small class="text-light">
+            &copy; 2025 Desenvolvido por Vitória de Moura Bauer.
+        </small>
+    </footer>
+    
+    <!-- Scripts Bootstrap e JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

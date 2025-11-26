@@ -1,0 +1,222 @@
+/* VARIÁVEIS & SETUP GERAL */
+:root {
+    --main-color: rgb(220, 95, 126);       
+    --main-color-hover: rgb(244, 151, 180);                       
+    --text-light: white; 
+    --text-dark: black;                   
+    --glass-bg-dark: rgba(0, 0, 0, 0.697);  /* Fundo de Vidro Estilo Fumê */
+    --gradient-bg-dark: linear-gradient(150deg, #000, #2f121e, #501228);
+    --shadow-transition: 0 0 3px rgba(255, 192, 203, 0.598), 0 0 10px rgba(255, 182, 193, 0.677), 0 0 30px rgb(131, 32, 56);
+    --shadow-box: 0 0 10px rgb(187, 80, 107), 0 0 1px pink;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--gradient-bg-dark);
+    color: var(--text-light);
+    overflow-x: hidden; /* Evita rolagem lateral indesejada */
+}
+
+
+/* NAV (Barra de Navegação) */
+/* Fundo da Barra */
+.nav-custom {
+    background-color: var(--glass-bg-dark);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(187, 80, 107, 0.5);
+}
+
+/* Marca (Logo) */
+.navbar-brand {
+    color: var(--text-light);
+    font-size: 1.6rem;
+}
+
+.navbar-brand:hover {
+    color: white;
+}
+
+.text-highlight {
+    color: var(--main-color);
+}
+
+/* Links do Menu */
+.nav-link {
+    color: var(--text-light);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--main-color);
+}
+
+
+/* HOME (Início) */
+.home {
+    padding-top: 50px; 
+}
+
+/* Textos da Home */
+.home-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    text-align: justify;
+    color: var(--text-light);
+}
+
+@media (max-width: 991px) {
+    .home-content p {
+        margin-left: 25px;       
+        max-width: 600px;      
+        width: 100%;            
+    }
+}
+
+
+/* Redes Sociais */
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px; 
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: all 0.5s ease; 
+}
+
+.social-media a:hover { 
+    transform: scale(1.2);
+    text-shadow: var(--shadow-transition);
+}
+
+/* Botão CV */
+.btn-custom {
+    display: inline-block;
+    padding: 12px 25px;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.5s ease; 
+    box-shadow: var(--shadow-box);
+    border: 1px solid var(--main-color-hover);
+}
+
+.btn-custom:hover {
+    color: var(--main-color);
+    transform: scale(1.1); 
+    box-shadow: var(--shadow-transition);
+    background-color: transparent; 
+}
+
+/* Foto de Perfil */
+.home-img {
+    max-width: 400px;
+}
+
+.home-img img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--main-color);
+    animation: glow 1.5s ease-in-out infinite alternate;
+    transition: all transform 3s ease;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px var(--shadow-transition); }
+    to { box-shadow: var(--shadow-transition); }
+}
+
+@media (max-width: 991px) {
+    .home-img {
+        margin-left: 20px;
+        max-width: 600px;      
+        width: 100%;            
+    }
+}
+
+
+
+/* SKILLS */
+.skills {
+    padding: 80px;
+    padding-bottom: 100px;
+}
+
+.skills .heading {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--text-light);
+    margin-bottom: 50px;
+}
+
+/* Card Individual */
+.skill-card {
+    background-color: black;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: var(--shadow-box);
+    transition: all 0.5s ease;
+    border: 0.5px solid pink;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-transition);
+}
+
+/* Ícones e Títulos dentro do Card */
+.skill-card i {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+
+/* CONTATO */
+#contact {
+    background-color: var(--glass-bg-dark); 
+    border-top: 1px solid rgba(255, 74, 143, 0.225);
+    box-shadow: var(--shadow-box); 
+}
+
+/* Efeito nos links de contato (email/whatsapp) */
+#contact a {
+    transition: all 0.5s ease;
+}
+
+#contact a:hover {
+    color: var(--main-color-hover) !important; /* Adicionei a cor para garantir destaque */
+}
