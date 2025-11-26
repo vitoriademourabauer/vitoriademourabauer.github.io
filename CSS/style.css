@@ -147,6 +147,7 @@ body {
     text-shadow: var(--shadow-transition);
 }
 
+
 /* Botão CV */
 .btn-custom {
     display: inline-block;
@@ -165,6 +166,13 @@ body {
     transform: scale(1.1); 
     box-shadow: var(--shadow-transition);
     background-color: transparent; 
+}
+
+@media (max-width: 991px) {
+    .home-content .social-media,
+    .home-content .btn-custom { 
+        margin-left: 30px;
+    } 
 }
 
 /* Foto de Perfil */
