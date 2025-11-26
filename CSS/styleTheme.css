@@ -1,14 +1,24 @@
 
-/* VARIÁVEIS */
+/* ----- VARIÁVEIS ----- */
 :root {
-    --glass-bg-light: rgba(220, 183, 183, 0.576);   /* Fundo de Vidro Estilo Claro */
-    --gradient-bg-light: linear-gradient(150deg, white, rgb(255, 201, 210), rosybrown);
-    --shadow-box-light: 0 0 5px rgba(255, 255, 255, 0.757), 0 0 5px pink;
-    --text-shaow: 0 0 2px rgb(127, 9, 54), 0 0 3px rgb(195, 75, 105);
-    --shadow-transition-light: 0 0 2px white, 0 0 5px pink, 0 0 10px rgb(195, 75, 105);
+    --glass-bg-light: rgba(220, 183, 183, 0.576); 
+
+    --gradient-bg-light: linear-gradient(150deg, rgb(253, 252, 252), 
+                                                 rgb(255, 201, 210), 
+                                                 rgb(188, 143, 143));
+    
+    --shadow-box-light: 0 0 5px rgba(255, 255, 255, 0.757), 
+                        0 0 5px rgb(248, 195, 204);
+    
+    --text-shadow: 0 0 2px rgb(127, 9, 54), 
+                   0 0 3px rgb(195, 75, 105);
+
+    --shadow-transition-light: 0 0 2px white, 
+                               0 0 5px pink, 
+                               0 0 10px rgb(195, 75, 105);
 }
 
-/* CORPO */
+/* ----- CORPO ----- */
 body.light-mode {
     background: var(--gradient-bg-light);
     color: var(--main-color);
@@ -46,38 +56,22 @@ body.light-mode .nav-link:hover {
 }
 
 /* Botão de Tema */
-.btn-theme {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    border: 2px solid var(--main-color);
-    box-shadow: 0 0 5px var(--main-color), inset 0 0 5px var(--main-color);
-    background: transparent;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    margin-left: 20px;  
+body.light-mode .btn-theme {
+    border-color: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color), 
+                inset 0 0 5px var(--main-color);
 }
 
-.btn-theme:hover {
+body.light-mode .btn-theme:hover {
     box-shadow: 0 0 20px var(--main-color);
-    transform: scale(1.1) rotate(15deg);
 }
 
-.btn-theme i {
-    color: white;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-/* Cor do ícone no modo claro */
 body.light-mode .btn-theme i {
     color: var(--main-color);
 }
 
 
-/* HOME (Início, Textos e Redes Sociais) */
+/* ----- HOME ----- */
 /* Títulos e Parágrafos */
 body.light-mode .home-content h1 {
     color: var(--main-color);
@@ -117,7 +111,7 @@ body.light-mode .social-media a i:hover {
 }
 
 
-/* SKILLS */
+/* ----- SKILLS ----- */
 /* Estrutura do Card */
 body.light-mode .skill-card {
     background-color: var(--main-color);
@@ -147,7 +141,7 @@ body.light-mode .skill-card p {
 }
 
 
- /* CONTATO  */
+ /* ----- CONTATO -----  */
 body.light-mode #contact {
     background-color: var(--main-color); 
     border: 1px solid pink; 
